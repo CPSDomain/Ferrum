@@ -1,0 +1,40 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+
+config/name="Ferrum Frontier"
+config/description="Top-down factory builder: Factorio's look with Satisfactory's nodes, overclocking, milestones and Space Elevator."
+config/version="0.4.0"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+config/icon="res://icon.svg"
+config/windows_native_icon="res://icon.ico"
+boot_splash/bg_color=Color(0.078, 0.067, 0.051, 1)
+boot_splash/image="res://assets/splash.png"
+boot_splash/fullsize=true
+boot_splash/use_filter=true
+
+[autoload]
+
+Data="*res://scripts/data.gd"
+Hash="*res://scripts/noise.gd"
+World="*res://scripts/world.gd"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/stretch/aspect="expand"
+window/vsync/vsync_mode=1
+
+[gui]
+
+timers/tooltip_delay_sec=0.3
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=1
+environment/defaults/default_clear_color=Color(0.043, 0.039, 0.031, 1)
